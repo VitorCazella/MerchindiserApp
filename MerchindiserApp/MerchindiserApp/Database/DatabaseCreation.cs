@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MerchindiserApp.Database
 {
-    public class DatabaseCRUD : IDatabaseConnection
+    public class DatabaseCreation : IDatabase
     {
         public SQLiteConnection DbConnection()
         {

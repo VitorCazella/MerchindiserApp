@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MerchindiserApp.Database
 {
-    interface IDatabaseConnection
+    interface IDatabase
     {
         SQLite.SQLiteConnection DbConnection();
     }
