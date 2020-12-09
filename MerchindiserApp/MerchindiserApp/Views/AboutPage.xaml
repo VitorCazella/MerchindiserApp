@@ -10,10 +10,12 @@
                FontSize="Large"
                BackgroundColor="White"
                TextColor="Black"
-               HorizontalTextAlignment="Center" />
+               HorizontalTextAlignment="Center"
+               Margin="40"/>
 
         <!-- Body -->
-        <FlexLayout FlexLayout.Grow="1">
+        <FlexLayout FlexLayout.Grow="1"
+                    Margin="50">
 
             <!-- Content -->
             <ImageButton Source="https://static.thenounproject.com/png/163136-200.png"
@@ -44,7 +46,7 @@
         </FlexLayout>
 
         <!-- Footer -->
-        <Label Text="FOOTER"
+        <Label Text=""
                FontSize="Large"
                BackgroundColor="White"
                TextColor="Black"

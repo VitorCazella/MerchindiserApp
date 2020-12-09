@@ -2,11 +2,47 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MerchindiserApp.Views.ClientPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout Margin='0,50,0,60'>
+        <Image Source="https://cdn4.iconfinder.com/data/icons/random-shapes/30/pattern-random-06-512.png"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               HeightRequest="90"
+               WidthRequest="90"
+               FlexLayout.Grow="1"/>
+        <Label Text="Sticky Controller"
+               FlexLayout.Grow="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="Black"/>
+        
+        <Image Source="https://icons.iconarchive.com/icons/icons8/ios7/512/Network-Active-Directory-icon.png"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               HeightRequest="90"
+               FlexLayout.Grow="0"/>
+        <Label Text="Tech Guru"
+               FlexLayout.Grow="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="Black"/>
+        
+        <Image Source="https://blog.gnu-designs.com/wp-content/uploads/2013/09/Xfce-logo.png"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               HeightRequest="100"
+               WidthRequest="100"
+               FlexLayout.Grow="0"/>
+        <Label Text="Pet Rats"
+               FlexLayout.Grow="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="Black"/>
+
+    </StackLayout>
 </ContentPage>
