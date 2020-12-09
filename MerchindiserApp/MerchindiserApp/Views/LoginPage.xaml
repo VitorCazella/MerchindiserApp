@@ -8,6 +8,22 @@
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            
+            <Label Text="Merchindiser"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Title"
+               Margin="60"/>
+
+            <Entry x:Name="editor"
+                Placeholder="Enter your UserName"
+                HeightRequest="50"
+                Margin="20"/>
+            <Entry x:Name="editorTwo"
+                Placeholder="Enter your PassWord"
+                IsPassword="True"
+                HeightRequest="50" 
+                Margin="20"/>
             <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
         </StackLayout>
     </ContentPage.Content>
