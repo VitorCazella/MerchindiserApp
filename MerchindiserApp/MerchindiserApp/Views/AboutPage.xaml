@@ -3,28 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MerchindiserApp.Views.AboutPage">
 
-    <StackLayout Margin="10,35,10,10">
-        <Label Text="Merchindiser"
-               HorizontalOptions="Center"
-               FontAttributes="Bold"
-               FontSize="Title"
-               Margin="60"/>
+    <FlexLayout Direction="Column">
 
-        <Entry x:Name="editor"
-                Placeholder="Enter your UserName"
-                HeightRequest="50"
-                Margin="20"/>
-    <Entry x:Name="editorTwo"
-                Placeholder="Enter your PassWord"
-                HeightRequest="50" 
-                Margin="20"/>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Button Text="Log in"
-                Clicked="OnLogInButtonClicked"/>
-    </Grid>
-</StackLayout>
+        <!-- Header -->
+        <Label Text="Welcome"
+               FontSize="Large"
+               BackgroundColor="White"
+               TextColor="Black"
+               HorizontalTextAlignment="Center" />
+
+        <!-- Body -->
+        <FlexLayout FlexLayout.Grow="1">
+
+            <!-- Content -->
+            <ImageButton Source="https://static.thenounproject.com/png/163136-200.png"
+                         HeightRequest="100"
+                         WidthRequest="100"
+                         FlexLayout.Grow="1"
+                         Clicked="ImageButton_Clicked"/>
+            <ImageButton Source="https://static.thenounproject.com/png/196563-200.png"
+                         HeightRequest="100"
+                         WidthRequest="100"
+                         FlexLayout.Grow="1"
+                         Clicked="ImageButton_Clicked_1"/>
+            <ImageButton Source="https://cdn4.iconfinder.com/data/icons/general04/png/256/clients.png"
+                         HeightRequest="100"
+                         WidthRequest="100"
+                         FlexLayout.Grow="1"
+                         Clicked="ImageButton_Clicked_2"/>
+
+            <!-- Navigation items-->
+            <BoxView FlexLayout.Basis="50"
+                     FlexLayout.Order="-1"
+                     Color="White" />
+
+            <!-- Aside items -->
+            <BoxView FlexLayout.Basis="50"
+                     Color="White" />
+
+        </FlexLayout>
+
+        <!-- Footer -->
+        <Label Text="FOOTER"
+               FontSize="Large"
+               BackgroundColor="White"
+               TextColor="Black"
+               HorizontalTextAlignment="Center" />
+    </FlexLayout>
 </ContentPage>
