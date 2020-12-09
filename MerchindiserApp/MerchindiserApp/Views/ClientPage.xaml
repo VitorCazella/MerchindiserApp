@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MerchindiserApp.Views.ClientPage">
+<<<<<<< Updated upstream
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!"
@@ -9,4 +10,72 @@
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
+=======
+    
+    <StackLayout Margin='0,50,0,60'>
+
+        <Image Source="https://icons-for-free.com/iconfiles/png/512/controller+game+gaming+icon-1320195548533902003.png"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               HeightRequest="90"
+               WidthRequest="90"
+               FlexLayout.Grow="1"/>
+        <Label Text="Sticky Controller"
+               FlexLayout.Grow="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="Black"/>
+        <Label Text="Located in Auckland"
+               FlexLayout.Grow="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="15"
+               TextColor="Black"/>
+
+        <Image Source="https://icons-for-free.com/iconfiles/png/512/settings+icon-1320165661615627955.png"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               HeightRequest="90"
+               FlexLayout.Grow="0"/>
+        <Label Text="Tech Guru"
+               FlexLayout.Grow="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="Black"/>
+        <Label Text="Located in Wellington"
+               FlexLayout.Grow="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="15"
+               TextColor="Black"/>
+
+        <Image Source="https://img.icons8.com/ios/452/year-of-rat.png"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               HeightRequest="90"
+               WidthRequest="90"
+               FlexLayout.Grow="0"/>
+        <Label Text="Pet Rats"
+               FlexLayout.Grow="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="Black"/>
+        <Label Text="Located in Wellington"
+               FlexLayout.Grow="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="15"
+               TextColor="Black"/>
+
+    </StackLayout>
+>>>>>>> Stashed changes
 </ContentPage>
