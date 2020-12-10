@@ -12,9 +12,19 @@ namespace MerchindiserApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProfilePage : ContentPage
     {
+        ProfilePage _viewModel;
+
         public ProfilePage()
         {
             InitializeComponent();
+
+            BindingContext = _viewModel;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            _viewModel.OnAppearing();
         }
     }
 }

@@ -36,13 +36,13 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Steve Smith" FontAttributes="Bold" FontSize="30"/>
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="{Binding Name}" FontAttributes="Bold" FontSize="30"/>
                     <Label Grid.Row="1" Grid.Column="0" Text="New Zealand" TextColor="#a5a2a2" FontSize="16"/>
                     <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" FontSize="16">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Email: " FontAttributes="Bold" />
-                                <Span Text="stevesmith@gmail.com"  />
+                                <Span Text="{Binding Email}"  />
                                 <Span Text="Contact Number: " FontAttributes="Bold"/>
                                 <Span Text="021647809123"/>
                             </FormattedString>

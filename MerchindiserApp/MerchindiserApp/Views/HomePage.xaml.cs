@@ -1,14 +1,19 @@
-﻿using System;
+﻿using MerchindiserApp.ViewModels;
+using System;
 using System.IO;
 using Xamarin.Forms;
 
 namespace MerchindiserApp.Views
 {
-    public partial class AboutPage : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public AboutPage()
+        HomePageViewModel _viewModel;
+
+        public HomePage()
         {
             InitializeComponent();
+
+            BindingContext = _viewModel = new HomePageViewModel();
         }
 
         async void ImageButton_Clicked(object sender, EventArgs e)
