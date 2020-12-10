@@ -8,13 +8,20 @@
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            
-            <Label Text="Merchindiser"
+
+            <Image Source="https://multipeers.itpeers.com/wp-content/uploads/2017/02/retail-icon.png"
+                   HeightRequest="90"
+                   WidthRequest="90"
+                   FlexLayout.Grow="1"
+                   Margin="10"/>
+            <Label Text="Retail Merchindiser"
                HorizontalOptions="Center"
                FontAttributes="Bold"
+               TextColor="CadetBlue"
                FontSize="Title"
-               Margin="60"/>
+               Margin="20"/>
 
+<<<<<<< Updated upstream
             <Entry x:Name="Name"
                    Text="{Binding Name}"
                     Placeholder="Enter your UserName"
@@ -23,6 +30,14 @@
             <Entry x:Name="Password"
                    Text="{Binding Password}"
                 Placeholder="Enter your PassWord"
+=======
+            <Entry x:Name="editor"
+                Placeholder="Enter ID"
+                HeightRequest="50"
+                Margin="20"/>
+            <Entry x:Name="editorTwo"
+                Placeholder="Enter Password"
+>>>>>>> Stashed changes
                 IsPassword="True"
                 HeightRequest="50" 
                 Margin="20"/>
