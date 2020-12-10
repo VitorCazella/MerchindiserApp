@@ -5,7 +5,7 @@ using SQLite;
 
 namespace MerchindiserApp.Models
 {
-    class Users
+    public class Users
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
@@ -13,6 +13,6 @@ namespace MerchindiserApp.Models
         public string Password { get; set; }
         public string ContactDetails { get; set; }
         [NotNull]
-        public Boolean Type { get; set; }
+        public Boolean Type { get; set; } //False = Merchidiser and True = Supervisor
     }
 }
