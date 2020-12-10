@@ -1,4 +1,5 @@
-﻿using MerchindiserApp.ViewModels;
+﻿using MerchindiserApp.Database;
+using MerchindiserApp.ViewModels;
 using System;
 using System.IO;
 using Xamarin.Forms;
@@ -11,8 +12,9 @@ namespace MerchindiserApp.Views
 
         public HomePage()
         {
+            var login = new loginStatus();
+            Title = $"Welcome {login.GetUser().Name} ({login.GetType()})";
             InitializeComponent();
-
             BindingContext = _viewModel = new HomePageViewModel();
         }
 

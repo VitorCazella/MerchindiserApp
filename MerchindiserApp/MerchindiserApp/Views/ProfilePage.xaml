@@ -8,7 +8,7 @@
         </Grid.RowDefinitions>
 
         <Image Grid.Row="0"
-               Source="https://pngimage.net/wp-content/uploads/2019/05/man-profile-png-2.png"
+               Source="https://static.thenounproject.com/png/196563-200.png"
                VerticalOptions="Center"
                HorizontalOptions="Center"
                HeightRequest="200"
@@ -36,15 +36,16 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="{Binding Name}" FontAttributes="Bold" FontSize="30"/>
+                    <Label x:Name="Name"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="" FontAttributes="Bold" FontSize="30"/>
                     <Label Grid.Row="1" Grid.Column="0" Text="New Zealand" TextColor="#a5a2a2" FontSize="16"/>
                     <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" FontSize="16">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="Email: " FontAttributes="Bold" />
-                                <Span Text="{Binding Email}"  />
-                                <Span Text="Contact Number: " FontAttributes="Bold"/>
-                                <Span Text="021647809123"/>
+                                <Span Text="Contact Details: " FontAttributes="Bold" />
+                                <Span x:Name="ContactDets" Text="test"  />
+                                <Span Text="-----------"/>
+                                <Span Text="User Type: " FontAttributes="Bold"/>
+                                <Span x:Name="Type" Text="test"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>

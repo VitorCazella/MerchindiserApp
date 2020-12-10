@@ -17,6 +17,8 @@ namespace MerchindiserApp
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
         {
+            var login = new Database.loginStatus();
+            login.LogOut();
             await Shell.Current.GoToAsync("//LoginPage");
         }
     }

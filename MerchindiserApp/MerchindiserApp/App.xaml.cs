@@ -27,6 +27,13 @@ namespace MerchindiserApp
                         ContactDetails = "vitorniogwehngpwg",
                         Type = true
                     });
+                    App.Database.SaveUserAsync(new Users
+                    {
+                        Name = "Finn",
+                        Password = "1234",
+                        ContactDetails = "finn@gmail.com",
+                        Type = false
+                    });
                 }
                 return database;
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MerchindiserApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,19 +13,21 @@ namespace MerchindiserApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProfilePage : ContentPage
     {
-        ProfilePage _viewModel;
+        ProfilePageViewModel _viewModel;
 
         public ProfilePage()
         {
             InitializeComponent();
-
-            BindingContext = _viewModel;
+            BindingContext = _viewModel = new ProfilePageViewModel();
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
-            _viewModel.OnAppearing();
+            var login = new Database.loginStatus();
+            Name.Text = login.GetUser().Name;
+            ContactDets.Text = login.GetUser().ContactDetails;
+            Type.Text = login.GetType();
         }
     }
 }

@@ -10,9 +10,34 @@ namespace MerchindiserApp.Database
         private static bool IsLoggedin;
         private static Users LoggedUser;
 
+        static loginStatus()
+        {
+            IsLoggedin = false;
+        }
+
+        public Users GetUser() { return LoggedUser; }
+
         public bool GetStatus()
         {
             return IsLoggedin;
+        }
+
+        public string GetType()
+        {
+            if (LoggedUser.Type)
+            {
+                return "Supervisor";
+            }
+            else
+            {
+                return "Merchindiser";
+            }
+        }
+
+        public void SaveUser(Users user)
+        {
+            LoggedUser = user;
+            IsLoggedin = true;
         }
 
         public void LogOut()

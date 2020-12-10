@@ -46,19 +46,28 @@ namespace MerchindiserApp.ViewModels
         {
 
             var user = await App.Database.GetUserAsync(name);
+            var login = new Database.loginStatus();
 
             try
             {
-
-                if (name != user.Name || password != user.Password)
+                if (!login.GetStatus())
                 {
-                    DisplayInvalidLoginPrompt();
+                    if (name != user.Name || password != user.Password && !login.GetStatus())
+                    {
+                        DisplayInvalidLoginPrompt();
+                    }
+                    else
+                    {
+                        // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
+                        login.SaveUser(user);
+                        Application.Current.MainPage = new AppShell();
+                    }
                 }
                 else
                 {
-                    // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
                     Application.Current.MainPage = new AppShell();
                 }
+                
             }
             catch (Exception e)
             {
