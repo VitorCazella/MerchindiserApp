@@ -15,11 +15,13 @@
                FontSize="Title"
                Margin="60"/>
 
-            <Entry x:Name="editor"
-                Placeholder="Enter your UserName"
-                HeightRequest="50"
-                Margin="20"/>
-            <Entry x:Name="editorTwo"
+            <Entry x:Name="Name"
+                   Text="{Binding Name}"
+                    Placeholder="Enter your UserName"
+                    HeightRequest="50"
+                    Margin="20"/>
+            <Entry x:Name="Password"
+                   Text="{Binding Password}"
                 Placeholder="Enter your PassWord"
                 IsPassword="True"
                 HeightRequest="50" 
