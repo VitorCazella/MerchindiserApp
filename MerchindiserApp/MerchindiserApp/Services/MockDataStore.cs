@@ -14,12 +14,12 @@ namespace MerchindiserApp.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
+                new Item { Id = Guid.NewGuid().ToString(), Text = "First Ticket", Description="This is an job description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Second Ticket", Description="This is an job description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Third Ticket", Description="This is an job description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth Ticket", Description="This is an job description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth Ticket", Description="This is an job description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth Ticket", Description="This is an job description." }
             };
         }
 
