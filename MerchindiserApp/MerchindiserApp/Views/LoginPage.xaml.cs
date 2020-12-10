@@ -14,8 +14,25 @@ namespace MerchindiserApp.Views
     {
         public LoginPage()
         {
+            var vm = new LoginViewModel();
+            this.BindingContext = vm;
+            vm.DisplayInvalidLoginPrompt += () => DisplayAlert("Error", "Invalid Login, try again", "OK");
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
+
+            Name.Completed += (object sender, EventArgs e) =>
+            {
+                Password.Focus();
+            };
+
+            Password.Completed += (object sender, EventArgs e) =>
+            {
+                vm.LoginCommand.Execute(null);
+            };
+        }
+
+        public async void DisplayErrorAsync(string i,string e)
+        {
+            await DisplayAlert($"{i}", $"{e}", "OK");
         }
     }
 }
