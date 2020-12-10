@@ -21,7 +21,6 @@
                FontSize="Title"
                Margin="20"/>
 
-<<<<<<< Updated upstream
             <Entry x:Name="Name"
                    Text="{Binding Name}"
                     Placeholder="Enter your UserName"
@@ -29,18 +28,7 @@
                     Margin="20"/>
             <Entry x:Name="Password"
                    Text="{Binding Password}"
-                Placeholder="Enter your PassWord"
-=======
-            <Entry x:Name="editor"
-                Placeholder="Enter ID"
-                HeightRequest="50"
-                Margin="20"/>
-            <Entry x:Name="editorTwo"
-                Placeholder="Enter Password"
->>>>>>> Stashed changes
-                IsPassword="True"
-                HeightRequest="50" 
-                Margin="20"/>
+                Placeholder="Enter your PassWord" />
             <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
         </StackLayout>
     </ContentPage.Content>
