@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MerchindiserApp.Views.ClientPage">
+    
     <StackLayout Margin='0,50,0,60'>
-        <Image Source="https://cdn4.iconfinder.com/data/icons/random-shapes/30/pattern-random-06-512.png"
+
+        <Image Source="https://cdn.onlinewebfonts.com/svg/img_555444.png"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand"
                HeightRequest="90"
@@ -16,8 +18,15 @@
                FontAttributes="Bold"
                FontSize="20"
                TextColor="Black"/>
-        
-        <Image Source="https://icons.iconarchive.com/icons/icons8/ios7/512/Network-Active-Directory-icon.png"
+        <Label Text="Located in Auckland"
+               FlexLayout.Grow="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Italic"
+               FontSize="15"
+               TextColor="Black"/>
+
+        <Image Source="https://icons-for-free.com/iconfiles/png/512/settings+icon-1320165661615627955.png"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand"
                HeightRequest="90"
@@ -29,12 +38,19 @@
                FontAttributes="Bold"
                FontSize="20"
                TextColor="Black"/>
-        
-        <Image Source="https://blog.gnu-designs.com/wp-content/uploads/2013/09/Xfce-logo.png"
+        <Label Text="Located in Wellington"
+               FlexLayout.Grow="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Italic"
+               FontSize="15"
+               TextColor="Black"/>
+
+        <Image Source="https://img.icons8.com/ios/452/year-of-rat.png"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand"
-               HeightRequest="100"
-               WidthRequest="100"
+               HeightRequest="90"
+               WidthRequest="90"
                FlexLayout.Grow="0"/>
         <Label Text="Pet Rats"
                FlexLayout.Grow="0"
@@ -42,6 +58,13 @@
                VerticalOptions="Center"
                FontAttributes="Bold"
                FontSize="20"
+               TextColor="Black"/>
+        <Label Text="Located in Wellington"
+               FlexLayout.Grow="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Italic"
+               FontSize="15"
                TextColor="Black"/>
 
     </StackLayout>
