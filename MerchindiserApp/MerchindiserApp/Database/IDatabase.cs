@@ -17,7 +17,7 @@ namespace MerchindiserApp.Database
             _database.CreateTableAsync<Ticket>().Wait();
         }
 
-        public Task<List<Users>> GetUserAsync()
+        public Task<List<Users>> GetUsersAsync()
         {
             return _database.Table<Users>().ToListAsync();
         }
@@ -51,6 +51,23 @@ namespace MerchindiserApp.Database
         public Task<int> DeleteUserAsync(Users user)
         {
             return _database.DeleteAsync(user);
+        }
+
+        public Task<int> SaveTicketAsync(Ticket ticket)
+        {
+            if (ticket.ID != 0)
+            {
+                return _database.UpdateAsync(ticket);
+            }
+            else
+            {
+                return _database.InsertAsync(ticket);
+            }
+        }
+
+        public Task<List<Ticket>> GetTicketsAsync()
+        {
+            return _database.Table<Ticket>().ToListAsync();
         }
     }
 }

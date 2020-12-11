@@ -24,7 +24,7 @@ namespace MerchindiserApp
                     {
                         Name = "Vitor",
                         Password = "secret",
-                        ContactDetails = "vitorniogwehngpwg",
+                        ContactDetails = "vitor.test@yahoo.com",
                         Type = true
                     });
                     App.Database.SaveUserAsync(new Users

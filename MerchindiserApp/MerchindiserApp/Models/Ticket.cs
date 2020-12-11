@@ -5,7 +5,7 @@ using SQLite;
 
 namespace MerchindiserApp.Models
 {
-    class Ticket
+    public class Ticket
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }

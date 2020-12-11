@@ -36,16 +36,17 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <Label x:Name="Name"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="" FontAttributes="Bold" FontSize="30"/>
+                    <Label x:Name="Name"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="(Not Found)" FontAttributes="Bold" FontSize="30"/>
                     <Label Grid.Row="1" Grid.Column="0" Text="New Zealand" TextColor="#a5a2a2" FontSize="16"/>
                     <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" FontSize="16">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Contact Details: " FontAttributes="Bold" />
-                                <Span x:Name="ContactDets" Text="test"  />
-                                <Span Text="-----------"/>
+                                <Span x:Name="ContactDets" Text="(Not Found)"  />
+                                <Span Text="
+                                      "/>
                                 <Span Text="User Type: " FontAttributes="Bold"/>
-                                <Span x:Name="Type" Text="test"/>
+                                <Span x:Name="Type" Text="(Not Found)"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
